@@ -1,5 +1,7 @@
 from typing import Any, Optional
 
+__metaclass__ = type
+
 class _ErrorStream:
     def write(self, data: Any) -> None: ...
     def writelines(self, iovec: Any) -> None: ...

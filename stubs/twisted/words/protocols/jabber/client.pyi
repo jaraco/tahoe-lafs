@@ -1,3 +1,4 @@
+from twisted.python.compat import unicode as unicode
 from twisted.words.protocols.jabber import error as error, sasl as sasl, xmlstream as xmlstream
 from twisted.words.protocols.jabber.jid import JID as JID
 from twisted.words.xish import domish as domish, utility as utility, xpath as xpath

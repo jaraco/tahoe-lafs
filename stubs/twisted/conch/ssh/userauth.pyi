@@ -4,8 +4,7 @@ from twisted.conch.ssh.common import NS as NS, getNS as getNS
 from twisted.cred import credentials as credentials
 from twisted.cred.error import UnauthorizedLogin as UnauthorizedLogin
 from twisted.internet import defer as defer, reactor as reactor
-from twisted.logger import Logger as Logger
-from twisted.python import failure as failure
+from twisted.python import failure as failure, log as log
 from twisted.python.compat import nativeString as nativeString
 from typing import Any, Optional
 

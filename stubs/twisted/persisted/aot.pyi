@@ -1,5 +1,6 @@
 from twisted.persisted import crefutil as crefutil
 from twisted.python import log as log, reflect as reflect
+from twisted.python.compat import unicode as unicode
 from typing import Any, Optional
 
 class Named:

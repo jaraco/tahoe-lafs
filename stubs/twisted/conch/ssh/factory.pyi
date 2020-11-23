@@ -1,7 +1,7 @@
 from twisted.conch import error as error
 from twisted.conch.ssh import connection as connection, transport as transport, userauth as userauth
 from twisted.internet import protocol as protocol
-from twisted.logger import Logger as Logger
+from twisted.python import log as log
 from typing import Any
 
 class SSHFactory(protocol.Factory):

@@ -2,6 +2,7 @@ from twisted import plugin as plugin
 from twisted.application import app as app
 from twisted.internet import defer as defer
 from twisted.python import failure as failure, reflect as reflect, usage as usage
+from twisted.python.compat import long as long
 from twisted.python.filepath import FilePath as FilePath
 from twisted.python.reflect import namedModule as namedModule
 from twisted.trial import itrial as itrial, reporter as reporter, runner as runner

@@ -1,11 +1,8 @@
 from twisted.internet import address as address, base as base, error as error, interfaces as interfaces, main as main, protocol as protocol, tcp as tcp, udp as udp
-from twisted.internet.abstract import FileDescriptor as FileDescriptor
-from twisted.python import failure as failure, lockfile as lockfile, log as log, reflect as reflect
+from twisted.python import failure as failure, lockfile as lockfile, log as log, reflect as reflect, sendmsg as sendmsg
 from twisted.python.compat import lazyByteSlice as lazyByteSlice
 from twisted.python.util import untilConcludes as untilConcludes
 from typing import Any, Optional
-
-sendmsg: Any
 
 class _SendmsgMixin:
     def __init__(self) -> None: ...

@@ -3,6 +3,7 @@ from twisted.cred import checkers as checkers, credentials as credentials, porta
 from twisted.internet import defer as defer, error as error, interfaces as interfaces, protocol as protocol, reactor as reactor
 from twisted.protocols import basic as basic, policies as policies
 from twisted.python import failure as failure, filepath as filepath, log as log
+from twisted.python.compat import range as range, unicode as unicode
 from typing import Any, Optional
 from zope.interface import Interface
 
@@ -344,7 +345,7 @@ def decodeHostPort(line: Any): ...
 def encodeHostPort(host: Any, port: Any): ...
 
 class FTPDataPortFactory(protocol.ServerFactory):
-    noisy: bool = ...
+    noisy: int = ...
     def buildProtocol(self, addr: Any): ...
 
 class FTPClientBasic(basic.LineReceiver):

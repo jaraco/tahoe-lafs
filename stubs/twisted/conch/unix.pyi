@@ -7,8 +7,7 @@ from twisted.conch.ssh import filetransfer as filetransfer, forwarding as forwar
 from twisted.conch.ssh.filetransfer import FXF_APPEND as FXF_APPEND, FXF_CREAT as FXF_CREAT, FXF_EXCL as FXF_EXCL, FXF_READ as FXF_READ, FXF_TRUNC as FXF_TRUNC, FXF_WRITE as FXF_WRITE
 from twisted.cred import portal as portal
 from twisted.internet.error import ProcessExitedAlready as ProcessExitedAlready
-from twisted.logger import Logger as Logger
-from twisted.python import components as components
+from twisted.python import components as components, log as log
 from twisted.python.compat import nativeString as nativeString
 from typing import Any, Optional
 

@@ -2,6 +2,7 @@ from twisted.internet import defer as defer, error as error, interfaces as inter
 from twisted.mail._except import InsecureAuthenticationDisallowed as InsecureAuthenticationDisallowed, LineTooLong as LineTooLong, ServerErrorResponse as ServerErrorResponse, TLSError as TLSError, TLSNotSupportedError as TLSNotSupportedError
 from twisted.protocols import basic as basic, policies as policies
 from twisted.python import log as log
+from twisted.python.compat import intToBytes as intToBytes
 from typing import Any, Optional
 
 OK: bytes

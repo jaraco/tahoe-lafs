@@ -1,7 +1,8 @@
 from twisted.internet import protocol as protocol
 from twisted.python import failure as failure
+from twisted.python.compat import intern as intern, unicode as unicode
 from twisted.words.xish import domish as domish, utility as utility
-from typing import Any, Type
+from typing import Any
 
 STREAM_CONNECTED_EVENT: Any
 STREAM_START_EVENT: Any
@@ -37,5 +38,5 @@ class XmlStreamFactoryMixin(BootstrapMixin):
     def buildProtocol(self, addr: Any): ...
 
 class XmlStreamFactory(XmlStreamFactoryMixin, protocol.ReconnectingClientFactory):
-    protocol: Type[protocol.Protocol] = ...
+    protocol: Any = ...
     def buildProtocol(self, addr: Any): ...

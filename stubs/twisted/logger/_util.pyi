@@ -1,4 +1,3 @@
-from ._interfaces import LogTrace as LogTrace
-from ._logger import Logger as Logger
+from typing import Any
 
-def formatTrace(trace: LogTrace) -> str: ...
+def formatTrace(trace: Any): ...

@@ -3,7 +3,8 @@ from twisted.conch.client.knownhosts import ConsoleUI as ConsoleUI, KnownHostsFi
 from twisted.conch.error import ConchError as ConchError
 from twisted.conch.ssh import common as common, keys as keys, userauth as userauth
 from twisted.internet import defer as defer, protocol as protocol, reactor as reactor
-from twisted.python.compat import nativeString as nativeString
+from twisted.python import log as log
+from twisted.python.compat import nativeString as nativeString, raw_input as raw_input
 from twisted.python.filepath import FilePath as FilePath
 from typing import Any, Optional
 

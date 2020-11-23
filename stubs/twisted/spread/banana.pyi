@@ -1,7 +1,7 @@
 from twisted.internet import protocol as protocol
 from twisted.persisted import styles as styles
 from twisted.python import log as log
-from twisted.python.compat import iterbytes as iterbytes
+from twisted.python.compat import iterbytes as iterbytes, long as long
 from twisted.python.reflect import fullyQualifiedName as fullyQualifiedName
 from typing import Any
 
@@ -10,15 +10,15 @@ class BananaError(Exception): ...
 def int2b128(integer: Any, stream: Any) -> None: ...
 def b1282int(st: Any): ...
 
-LIST: bytes
-INT: bytes
-STRING: bytes
-NEG: bytes
-FLOAT: bytes
-LONGINT: bytes
-LONGNEG: bytes
-VOCAB: bytes
-HIGH_BIT_SET: bytes
+LIST: Any
+INT: Any
+STRING: Any
+NEG: Any
+FLOAT: Any
+LONGINT: Any
+LONGNEG: Any
+VOCAB: Any
+HIGH_BIT_SET: Any
 
 def setPrefixLimit(limit: Any) -> None: ...
 

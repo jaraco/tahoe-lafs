@@ -1,4 +1,5 @@
 from twisted.python import log as log
+from twisted.python.compat import escape as escape
 from twisted.python.deprecate import deprecated as deprecated
 from typing import Any
 

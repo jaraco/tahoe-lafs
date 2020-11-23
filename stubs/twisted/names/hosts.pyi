@@ -1,5 +1,5 @@
 from twisted.internet import defer as defer
-from twisted.internet.abstract import isIPAddress as isIPAddress, isIPv6Address as isIPv6Address
+from twisted.internet.abstract import isIPAddress as isIPAddress
 from twisted.names import common as common, dns as dns
 from twisted.python import failure as failure
 from twisted.python.compat import nativeString as nativeString

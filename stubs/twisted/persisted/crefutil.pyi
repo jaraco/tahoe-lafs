@@ -1,5 +1,6 @@
 from twisted.internet.defer import Deferred as Deferred
 from twisted.python import log as log, reflect as reflect
+from twisted.python.compat import range as range
 from typing import Any
 
 class NotKnown:

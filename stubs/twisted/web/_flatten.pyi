@@ -1,5 +1,5 @@
 from twisted.internet.defer import Deferred as Deferred, ensureDeferred as ensureDeferred
-from twisted.python.compat import nativeString as nativeString
+from twisted.python.compat import iteritems as iteritems, nativeString as nativeString, unicode as unicode
 from twisted.web._stan import CDATA as CDATA, CharRef as CharRef, Comment as Comment, Tag as Tag, slot as slot, voidElements as voidElements
 from twisted.web.error import FlattenerError as FlattenerError, UnfilledSlot as UnfilledSlot, UnsupportedType as UnsupportedType
 from twisted.web.iweb import IRenderable as IRenderable

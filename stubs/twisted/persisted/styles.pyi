@@ -1,8 +1,11 @@
-import types
+import cPickle
+import pickle
 from twisted.python import log as log, reflect as reflect
-from typing import Any, Dict
+from typing import Any
 
-oldModules: Dict[str, types.ModuleType]
+oldModules: Any
+
+class _UniversalPicklingError(pickle.PicklingError, cPickle.PicklingError): ...
 
 def pickleMethod(method: Any): ...
 def unpickleMethod(im_name: Any, im_self: Any, im_class: Any): ...
@@ -16,7 +19,7 @@ def unpickleStringI(val: Any, sek: Any): ...
 class Ephemeral:
     def __reduce__(self): ...
 
-versionedsToUpgrade: Dict[int, Versioned]
+versionedsToUpgrade: Any
 upgraded: Any
 
 def doUpgrade() -> None: ...

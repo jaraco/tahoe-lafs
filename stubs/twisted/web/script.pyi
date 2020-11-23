@@ -1,5 +1,5 @@
 from twisted import copyright as copyright
-from twisted.python.compat import execfile as execfile, networkString as networkString
+from twisted.python.compat import NativeStringIO as NativeStringIO, execfile as execfile, networkString as networkString
 from twisted.web import http as http, resource as resource, server as server, static as static, util as util
 from typing import Any, Optional
 

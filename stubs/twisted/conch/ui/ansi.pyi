@@ -1,4 +1,4 @@
-from twisted.logger import Logger as Logger
+from twisted.python import log as log
 from typing import Any
 
 class ColorText:

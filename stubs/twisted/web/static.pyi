@@ -1,13 +1,13 @@
 from twisted.internet import abstract as abstract, interfaces as interfaces
 from twisted.python import components as components, filepath as filepath, log as log
-from twisted.python.compat import nativeString as nativeString, networkString as networkString
+from twisted.python.compat import escape as escape, intToBytes as intToBytes, nativeString as nativeString, networkString as networkString
 from twisted.python.deprecate import deprecated as deprecated
 from twisted.python.runtime import platformType as platformType
 from twisted.python.url import URL as URL
 from twisted.python.util import InsensitiveDict as InsensitiveDict
 from twisted.web import http as http, resource as resource, server as server
 from twisted.web.util import redirectTo as redirectTo
-from typing import Any, Callable, Dict, Optional
+from typing import Any, Optional
 
 dangerousPathError: Any
 
@@ -38,7 +38,7 @@ def getTypeAndEncoding(filename: Any, types: Any, encodings: Any, defaultType: A
 class File(resource.Resource, filepath.FilePath):
     contentTypes: Any = ...
     contentEncodings: Any = ...
-    processors: Dict[str, Callable[[str, Any], Data]] = ...
+    processors: Any = ...
     indexNames: Any = ...
     type: Any = ...
     defaultType: Any = ...

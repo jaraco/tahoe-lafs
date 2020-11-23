@@ -1,6 +1,6 @@
 from .jelly import Jellyable as Jellyable, Unjellyable as Unjellyable, getInstanceState as getInstanceState, setInstanceState as setInstanceState, setUnjellyableFactoryForClass as setUnjellyableFactoryForClass, setUnjellyableForClass as setUnjellyableForClass, setUnjellyableForClassTree as setUnjellyableForClassTree, unjellyableRegistry as unjellyableRegistry
 from twisted.python import log as log, reflect as reflect
-from twisted.python.compat import cmp as cmp, comparable as comparable
+from twisted.python.compat import cmp as cmp, comparable as comparable, unicode as unicode
 from typing import Any
 from zope.interface import Interface
 

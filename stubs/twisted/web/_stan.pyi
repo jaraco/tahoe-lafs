@@ -1,3 +1,4 @@
+from twisted.python.compat import iteritems as iteritems
 from typing import Any, Optional
 
 class slot:

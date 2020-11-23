@@ -1,3 +1,4 @@
+from twisted.python.compat import raw_input as raw_input
 from typing import Any
 
 class DirectoryExists(OSError): ...

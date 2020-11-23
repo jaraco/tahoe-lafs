@@ -1,6 +1,8 @@
 from twisted.conch.ssh import channel as channel, common as common
 from twisted.internet import protocol as protocol, reactor as reactor
 from twisted.internet.endpoints import HostnameEndpoint as HostnameEndpoint, connectProtocol as connectProtocol
+from twisted.python import log as log
+from twisted.python.compat import unicode as unicode
 from typing import Any
 
 class SSHListenForwardingFactory(protocol.Factory):

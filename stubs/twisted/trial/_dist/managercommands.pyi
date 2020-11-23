@@ -1,7 +1,7 @@
-from twisted.protocols.amp import Boolean as Boolean, Command as Command, ListOf as ListOf, Unicode as Unicode
+from twisted.protocols.amp import Boolean as Boolean, Command as Command, ListOf as ListOf, String as String, Unicode as Unicode
 from typing import Any
 
-NativeString = Unicode
+NativeString: Any
 
 class AddSuccess(Command):
     arguments: Any = ...

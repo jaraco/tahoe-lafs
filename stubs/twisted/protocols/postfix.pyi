@@ -2,6 +2,7 @@ from collections import UserDict
 from twisted.internet import defer as defer, protocol as protocol
 from twisted.protocols import basic as basic, policies as policies
 from twisted.python import log as log
+from twisted.python.compat import unicode as unicode
 from typing import Any, Optional
 
 def quote(s: Any): ...

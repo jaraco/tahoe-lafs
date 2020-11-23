@@ -2,6 +2,7 @@ from twisted.conch.error import ConchError as ConchError, MissingKeyStoreError a
 from twisted.conch.ssh import keys as keys
 from twisted.conch.ssh.common import NS as NS, getMP as getMP, getNS as getNS
 from twisted.internet import defer as defer, protocol as protocol
+from twisted.python.compat import itervalues as itervalues
 from typing import Any
 
 class SSHAgentClient(protocol.Protocol):

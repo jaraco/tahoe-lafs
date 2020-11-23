@@ -1,3 +1,4 @@
+from twisted.python.compat import unichr as unichr
 from twisted.python.deprecate import deprecatedModuleAttribute as deprecatedModuleAttribute
 from typing import Any
 from zope.interface import Interface

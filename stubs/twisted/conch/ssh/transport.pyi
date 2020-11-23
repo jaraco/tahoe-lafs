@@ -1,8 +1,7 @@
 from twisted.conch.ssh import address as address, keys as keys
 from twisted.conch.ssh.common import MP as MP, NS as NS, ffs as ffs, getMP as getMP, getNS as getNS, int_from_bytes as int_from_bytes
 from twisted.internet import defer as defer, protocol as protocol
-from twisted.logger import Logger as Logger
-from twisted.python import randbytes as randbytes
+from twisted.python import log as log, randbytes as randbytes
 from twisted.python.compat import iterbytes as iterbytes, networkString as networkString
 from typing import Any
 

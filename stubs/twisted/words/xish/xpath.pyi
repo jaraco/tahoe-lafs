@@ -1,6 +1,7 @@
+from twisted.python.compat import StringType as StringType, unicode as unicode
 from typing import Any
 
-class LiteralValue(str):
+class LiteralValue(unicode):
     def value(self, elem: Any): ...
 
 class IndexValue:

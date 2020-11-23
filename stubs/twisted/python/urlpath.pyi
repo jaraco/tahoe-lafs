@@ -1,3 +1,4 @@
+from twisted.python.compat import nativeString as nativeString, unicode as unicode, urlquote as urlquote, urlunquote as urlunquote
 from typing import Any
 
 class URLPath:

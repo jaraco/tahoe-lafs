@@ -1,4 +1,5 @@
 from twisted.conch import error as error
+from twisted.python.compat import long as long
 from typing import Any
 from zope.interface import Interface
 

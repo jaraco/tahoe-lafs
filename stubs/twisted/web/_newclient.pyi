@@ -13,6 +13,7 @@ from twisted.web.http_headers import Headers as Headers
 from twisted.web.iweb import IClientRequest as IClientRequest, IResponse as IResponse, UNKNOWN_LENGTH as UNKNOWN_LENGTH
 from typing import Any, Optional
 
+__metaclass__ = type
 STATUS: str
 HEADER: str
 BODY: str

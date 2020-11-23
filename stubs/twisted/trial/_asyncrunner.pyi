@@ -1,7 +1,8 @@
-import unittest as pyunit
 from twisted.python import components as components
 from twisted.trial import itrial as itrial, reporter as reporter
 from typing import Any
+
+pyunit: Any
 
 class TestSuite(pyunit.TestSuite):
     def run(self, result: Any): ...

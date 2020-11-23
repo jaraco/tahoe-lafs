@@ -2,6 +2,7 @@ from twisted.internet.interfaces import IHandshakeListener as IHandshakeListener
 from twisted.internet.main import CONNECTION_LOST as CONNECTION_LOST
 from twisted.internet.protocol import Protocol as Protocol
 from twisted.protocols.policies import ProtocolWrapper as ProtocolWrapper, WrappingFactory as WrappingFactory
+from twisted.python.compat import unicode as unicode
 from twisted.python.failure import Failure as Failure
 from typing import Any
 

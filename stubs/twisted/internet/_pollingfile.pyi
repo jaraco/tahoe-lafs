@@ -1,4 +1,5 @@
 from twisted.internet.interfaces import IConsumer as IConsumer, IPushProducer as IPushProducer
+from twisted.python.compat import unicode as unicode
 from typing import Any
 
 MIN_TIMEOUT: float

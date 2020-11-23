@@ -1,8 +1,8 @@
 from twisted.conch import error as error
 from twisted.conch.ssh import common as common, service as service
 from twisted.internet import defer as defer
-from twisted.logger import Logger as Logger
-from twisted.python.compat import nativeString as nativeString, networkString as networkString
+from twisted.python import log as log
+from twisted.python.compat import long as long, nativeString as nativeString, networkString as networkString
 from typing import Any
 
 class SSHConnection(service.SSHService):

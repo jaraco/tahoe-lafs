@@ -1,5 +1,5 @@
 from twisted.internet.abstract import FileDescriptor as FileDescriptor
-from twisted.internet.interfaces import ISSLTransport as ISSLTransport
+from twisted.internet.interfaces import ISSLTransport as ISSLTransport, ITLSTransport as ITLSTransport
 from twisted.protocols.tls import TLSMemoryBIOFactory as TLSMemoryBIOFactory, TLSMemoryBIOProtocol as TLSMemoryBIOProtocol
 from typing import Any
 

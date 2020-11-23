@@ -1,39 +1,62 @@
-import urllib.parse as urllib_parse
-from collections.abc import Sequence as Sequence
+import FIXME as cookielib
+import urlparse as urllib_parse
+from base64 import decodestring as _b64decodebytes, encodestring as _b64encodebytes
+from cgi import escape as escape
+from collections import Sequence as Sequence
 from functools import reduce as reduce
-from html import escape as escape
-from http import cookiejar as cookielib
-from io import IOBase, StringIO as NativeStringIO
+from io import BytesIO as NativeStringIO, IOBase
 from sys import intern as intern
-from typing import Any, AnyStr, Optional
-from urllib.parse import quote as urlquote, unquote as urlunquote
+from types import FileType as FileType, InstanceType as InstanceType
+from typing import Any, Optional
+from urllib import quote as urlquote, unquote as urlunquote
 
-FileType = IOBase
-frozenset = frozenset
-InstanceType = object
-izip = zip
-long = int
-range = range
-raw_input = input
+adict = dict
 set = set
-StringType = str
-unichr = chr
+frozenset = frozenset
+reduce = reduce
+
+def execfile(filename: Any, globals: Any, locals: Optional[Any] = ...) -> None: ...
+cmp = cmp
+
+def comparable(klass: Any): ...
 unicode = str
-xrange = range
+long = int
+unicode = unicode
+long = long
+
+def nativeString(s: Any): ...
+def reraise(exception: Any, traceback: Any) -> None: ...
+def iterbytes(originalBytes: Any) -> None: ...
+def intToBytes(i: Any): ...
+def lazyByteSlice(object: Any, offset: int = ..., size: Optional[Any] = ...): ...
+def networkString(s: Any): ...
+lazyByteSlice = buffer
+StringType = basestring
+StringType = str
+InstanceType = object
+FileType = IOBase
 
 def iteritems(d: Any): ...
 def itervalues(d: Any): ...
 def items(d: Any): ...
-def execfile(filename: Any, globals: Any, locals: Optional[Any] = ...) -> None: ...
-def cmp(a: Any, b: Any): ...
-def comparable(klass: Any): ...
-def nativeString(s: AnyStr) -> str: ...
-def reraise(exception: Any, traceback: Any) -> None: ...
-def iterbytes(originalBytes: Any) -> None: ...
-def intToBytes(i: int) -> bytes: ...
-def lazyByteSlice(object: Any, offset: int = ..., size: Optional[Any] = ...): ...
-def networkString(s: str) -> bytes: ...
+range = range
+xrange = range
+izip = zip
+range = xrange
+xrange = xrange
+
 def bytesEnviron(): ...
+intern = intern
+unichr = chr
+raw_input = input
+unichr = unichr
+raw_input = raw_input
 
 # Names in __all__ with no definition:
+#   OrderedDict
+#   _bytesChr
+#   _bytesRepr
+#   _coercedUnicode
 #   _get_async_param
+#   _keys
+#   _tokenize

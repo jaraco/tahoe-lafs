@@ -1,4 +1,5 @@
 from twisted.internet import defer as defer
+from twisted.python.compat import unicode as unicode
 from twisted.words.protocols.jabber import sasl_mechanisms as sasl_mechanisms, xmlstream as xmlstream
 from twisted.words.xish import domish as domish
 from typing import Any, Optional

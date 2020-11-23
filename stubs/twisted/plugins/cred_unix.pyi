@@ -4,6 +4,7 @@ from twisted.cred.credentials import IUsernamePassword as IUsernamePassword
 from twisted.cred.error import UnauthorizedLogin as UnauthorizedLogin
 from twisted.cred.strcred import ICheckerFactory as ICheckerFactory
 from twisted.internet import defer as defer
+from twisted.python.compat import StringType as StringType
 from typing import Any
 
 def verifyCryptedPassword(crypted: Any, pw: Any): ...

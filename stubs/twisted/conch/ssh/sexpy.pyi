@@ -1,3 +1,4 @@
+from twisted.python.compat import intToBytes as intToBytes
 from typing import Any
 
 def parse(s: Any): ...

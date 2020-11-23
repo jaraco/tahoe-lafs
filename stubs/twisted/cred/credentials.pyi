@@ -1,9 +1,7 @@
 from twisted.cred import error as error
 from twisted.cred._digest import calcHA1 as calcHA1, calcHA2 as calcHA2, calcResponse as calcResponse
-from twisted.python.compat import nativeString as nativeString, networkString as networkString
-from twisted.python.deprecate import deprecatedModuleAttribute as deprecatedModuleAttribute
+from twisted.python.compat import intToBytes as intToBytes, nativeString as nativeString, networkString as networkString, unicode as unicode
 from twisted.python.randbytes import secureRandom as secureRandom
-from twisted.python.versions import Version as Version
 from typing import Any, Optional
 from zope.interface import Interface
 

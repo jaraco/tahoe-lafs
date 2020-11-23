@@ -1,6 +1,7 @@
 from twisted.application import service as service
 from twisted.internet import defer as defer
 from twisted.python import log as log
+from twisted.python.compat import unicode as unicode
 from twisted.words.protocols.jabber import error as error, ijabber as ijabber, jstrports as jstrports, xmlstream as xmlstream
 from twisted.words.xish import domish as domish
 from typing import Any

@@ -1,6 +1,6 @@
-from typing import Any, Dict, Optional, Type
+from typing import Any, Optional
 
-defaultContextDict: Dict[Type[object], Dict[str, str]]
+defaultContextDict: Any
 setDefault: Any
 
 class ContextTracker:
@@ -15,9 +15,5 @@ class ThreadedContextTracker:
     def currentContext(self): ...
     def callWithContext(self, ctx: Any, func: Any, *args: Any, **kw: Any): ...
     def getContext(self, key: Any, default: Optional[Any] = ...): ...
-
-theContextTracker: Any
-call: Any
-get: Any
 
 def installContextTracker(ctr: Any) -> None: ...

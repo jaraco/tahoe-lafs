@@ -1,4 +1,5 @@
 from twisted.python import log as log
+from twisted.python.compat import iteritems as iteritems
 from twisted.words.xish import xpath as xpath
 from typing import Any, Optional
 

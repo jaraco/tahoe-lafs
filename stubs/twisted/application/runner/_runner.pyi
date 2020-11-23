@@ -1,7 +1,6 @@
 from ._exit import ExitStatus as ExitStatus, exit as exit
-from ._pidfile import AlreadyRunningError as AlreadyRunningError, IPIDFile as IPIDFile, InvalidPIDFileError as InvalidPIDFileError, nonePIDFile as nonePIDFile
-from twisted.internet.interfaces import IReactorCore as IReactorCore
-from twisted.logger import FileLogObserver as FileLogObserver, FilteringLogObserver as FilteringLogObserver, LogLevel as LogLevel, LogLevelFilterPredicate as LogLevelFilterPredicate, Logger as Logger, globalLogBeginner as globalLogBeginner, textFileLogObserver as textFileLogObserver
+from ._pidfile import AlreadyRunningError as AlreadyRunningError, InvalidPIDFileError as InvalidPIDFileError, nonePIDFile as nonePIDFile
+from twisted.logger import FilteringLogObserver as FilteringLogObserver, LogLevel as LogLevel, LogLevelFilterPredicate as LogLevelFilterPredicate, Logger as Logger, globalLogBeginner as globalLogBeginner, textFileLogObserver as textFileLogObserver
 from typing import Any
 
 class Runner:

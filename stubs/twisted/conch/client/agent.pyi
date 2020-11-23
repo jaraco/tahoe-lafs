@@ -1,6 +1,6 @@
 from twisted.conch.ssh import agent as agent, channel as channel, keys as keys
 from twisted.internet import protocol as protocol, reactor as reactor
-from twisted.logger import Logger as Logger
+from twisted.python import log as log
 from typing import Any
 
 class SSHAgentClient(agent.SSHAgentClient):

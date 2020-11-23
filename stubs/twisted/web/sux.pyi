@@ -1,4 +1,5 @@
 from twisted.internet.protocol import Protocol as Protocol
+from twisted.python.compat import unicode as unicode
 from twisted.python.reflect import prefixedMethodNames as prefixedMethodNames
 from typing import Any
 

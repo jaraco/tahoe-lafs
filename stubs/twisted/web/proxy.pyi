@@ -1,5 +1,6 @@
 from twisted.internet import reactor as reactor
 from twisted.internet.protocol import ClientFactory as ClientFactory
+from twisted.python.compat import urllib_parse as urllib_parse, urlquote as urlquote
 from twisted.web.http import HTTPChannel as HTTPChannel, HTTPClient as HTTPClient, Request as Request
 from twisted.web.resource import Resource as Resource
 from twisted.web.server import NOT_DONE_YET as NOT_DONE_YET

@@ -1,6 +1,7 @@
 from twisted.conch import error as error
 from twisted.conch.ssh import transport as transport
 from twisted.internet import defer as defer, protocol as protocol, reactor as reactor
+from twisted.python import log as log
 from typing import Any
 
 class SSHClientFactory(protocol.ClientFactory):

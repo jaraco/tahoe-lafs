@@ -2,13 +2,11 @@ from twisted.conch.error import HostKeyChanged as HostKeyChanged, InvalidEntry a
 from twisted.conch.interfaces import IKnownHostEntry as IKnownHostEntry
 from twisted.conch.ssh.keys import BadKeyError as BadKeyError, FingerprintFormats as FingerprintFormats, Key as Key
 from twisted.internet import defer as defer
-from twisted.logger import Logger as Logger
-from twisted.python.compat import nativeString as nativeString
+from twisted.python import log as log
+from twisted.python.compat import nativeString as nativeString, unicode as unicode
 from twisted.python.randbytes import secureRandom as secureRandom
 from twisted.python.util import FancyEqMixin as FancyEqMixin
 from typing import Any
-
-log: Any
 
 class _BaseEntry:
     keyType: Any = ...

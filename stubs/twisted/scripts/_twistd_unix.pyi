@@ -2,6 +2,7 @@ from twisted import copyright as copyright, logger as logger
 from twisted.application import app as app, service as service
 from twisted.internet.interfaces import IReactorDaemonize as IReactorDaemonize
 from twisted.python import log as log, logfile as logfile, usage as usage
+from twisted.python.compat import intToBytes as intToBytes
 from twisted.python.runtime import platformType as platformType
 from twisted.python.util import gidFromString as gidFromString, switchUID as switchUID, uidFromString as uidFromString, untilConcludes as untilConcludes
 from typing import Any
