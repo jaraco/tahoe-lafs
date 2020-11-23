@@ -1,0 +1,3 @@
+from typing import Any, Optional
+
+def install(ms: int = ..., reactor: Optional[Any] = ..., args: Any = ..., kw: Any = ...): ...

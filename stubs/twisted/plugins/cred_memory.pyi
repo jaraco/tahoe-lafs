@@ -1,0 +1,16 @@
+from twisted import plugin as plugin
+from twisted.cred.checkers import InMemoryUsernamePasswordDatabaseDontUse as InMemoryUsernamePasswordDatabaseDontUse
+from twisted.cred.credentials import IUsernameHashedPassword as IUsernameHashedPassword, IUsernamePassword as IUsernamePassword
+from twisted.cred.strcred import ICheckerFactory as ICheckerFactory
+from typing import Any
+
+inMemoryCheckerFactoryHelp: str
+
+class InMemoryCheckerFactory:
+    authType: str = ...
+    authHelp: Any = ...
+    argStringFormat: str = ...
+    credentialInterfaces: Any = ...
+    def generateChecker(self, argstring: Any): ...
+
+theInMemoryCheckerFactory: Any

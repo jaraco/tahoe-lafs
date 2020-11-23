@@ -1,0 +1,3 @@
+from typing import Any
+
+def lsLine(name: Any, s: Any): ...

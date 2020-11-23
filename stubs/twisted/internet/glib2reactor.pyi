@@ -1,0 +1,6 @@
+from twisted.internet import gtk2reactor
+
+class Glib2Reactor(gtk2reactor.Gtk2Reactor):
+    def __init__(self) -> None: ...
+
+def install() -> None: ...

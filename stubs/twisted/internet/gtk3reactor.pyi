@@ -1,0 +1,9 @@
+from twisted.internet import gireactor
+
+class Gtk3Reactor(gireactor.GIReactor):
+    def __init__(self) -> None: ...
+
+class PortableGtk3Reactor(gireactor.PortableGIReactor):
+    def __init__(self) -> None: ...
+
+def install(): ...

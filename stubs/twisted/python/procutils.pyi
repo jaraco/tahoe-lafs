@@ -1,0 +1,3 @@
+from typing import Any
+
+def which(name: Any, flags: Any = ...): ...

@@ -1,0 +1,1 @@
+from twisted.python.deprecate import deprecatedModuleAttribute as deprecatedModuleAttribute

@@ -1,0 +1,9 @@
+from collections import namedtuple
+from socket import SCM_RIGHTS as SCM_RIGHTS, socket as Socket
+from typing import List, Tuple
+
+ReceivedMessage = namedtuple('ReceivedMessage', ['data', 'ancillary', 'flags'])
+
+def sendmsg(socket: Socket, data: bytes, ancillary: List[Tuple[int, int, bytes]]=..., flags: int=...) -> int: ...
+def recvmsg(socket: Socket, maxSize: int=..., cmsgSize: int=..., flags: int=...) -> ReceivedMessage: ...
+def getSocketFamily(socket: Socket) -> int: ...

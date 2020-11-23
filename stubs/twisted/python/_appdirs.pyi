@@ -1,0 +1,3 @@
+from twisted.python.compat import currentframe as currentframe
+
+def getDataDirectory(moduleName: str=...) -> str: ...
